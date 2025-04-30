@@ -1,0 +1,204 @@
+/*
+    Conteúdo principal
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --border: 0.1rem solid #7c4b13;
+    --bg: #010103;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    transition: 0.1s linear;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg);
+    border-bottom: var(--border);
+}
+
+.logo {
+   height: 140px;
+   margin: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    gap: 25px;
+    margin-right: 85px;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a:hover {
+    color: #7c4b13;
+    border-bottom: 0.1rem solid;
+    padding-bottom: 0.2rem;
+}
+
+.content-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    color: white;
+}
+
+@keyframes slideInleft {
+    from {
+        opacity: -1;
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slide-in-left {
+    animation: slideInLeft 3s ease-out;
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: -1;
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+  }
+
+  .box-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 640px;
+    position: relative;
+    bottom: 35px;
+    animation: slideInLeft 3s ease-out;
+}
+.btn {
+    background-color: #7c4b13;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 250px;
+    height: 35px;
+}
+
+.btn:hover {
+    background-color: #522d04;
+}
+
+.review {
+    background: url(./img/fundo2-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 340px;
+    color: white;
+    position: relative;
+    top: 110px;
+}
+
+.name {
+    color: white;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.3rem;
+    justify-content: center;
+}
+
+.review  .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 5rem 1rem;
+    margin: 1.9rem 1.9rem 1.9rem;
+    position: relative;
+    bottom: 8rem;
+}
+
+.review .box-container .box p {
+    font-size: 1.0rem;
+    color: #fff;
+    padding: 1rem 2rem;
+    line-height: 1.8;
+}
+
+.review .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+/* Localização dda cafeteria */
+
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.footer .share {
+   text-align: center;
+   padding: 1rem 0;
+}
+
+.footer .share img {
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 90%;
+    padding: 0.2rem;
+}
+
+.footer .share img:hover {
+    background-color: #a35803;
+}
