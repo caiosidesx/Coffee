@@ -1,8 +1,8 @@
 ## American Coffee
 
-Esse projeto é um site de uma cafeteria fictícia chamada American Coffee. para praticar minhas habilidades front end
+É um projeto de um site de uma cafeteria fictícia.
 
-## Tecnologias usadas
+### Tecnologias utilizadas
 
 - HTML
 - CSS
