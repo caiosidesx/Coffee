@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,19 +12,54 @@
 
       <nav class="navbar">
         <a href="#home" class="menu-link">Home</a>
-        <a href="#menu" class="menu-link">Menu</a>
+        <a href="#" class="menu-link" id="btn-open" onclick="openModal()">Menu</a>
         <a href="#reviews" class="menu-link">Avaliações</a>
         <a href="#address" class="menu-link">Endereço</a>
       </nav>
     </header>
 
+    <dialog id="modal-menu">
+      <div class="modal-cards">
+        <img src="./img/panqueca2.png" alt="" class="items-modal" />
+        <h2 class="description">Panqueca</h2>
+        <p class="price">R$4,50</p>
+      </div>
+      <div class="modal-cards">
+        <img src="./img/cafe.png" alt="" class="items-modal" />
+        <h2 class="description">Café</h2>
+        <p class="price">R$5,00</p>
+      </div>
+      <div class="modal-cards">
+        <img src="./img/expresso.png" alt="" class="items-modal" />
+        <h2 class="description">Café Expresso</h2>
+        <p class="price">R$6,50</p>
+      </div>
+      <div class="modal-cards">
+        <img src="./img/torta.png" alt="" class="items-modal" />
+        <h2 class="description">Torta de Chocolate</h2>
+        <p class="price">R$3,50</p>
+      </div>
+      <div class="modal-cards">
+        <img src="./img/capuccino.png" alt="" class="items-modal" />
+        <h2 class="description">Capuccino</h2>
+        <p class="price">R$6,50</p>
+      </div>
+      <div class="modal-cards">
+        <img src="./img/waffles.png" alt="" class="items-modal" />
+        <h2 class="description">Waffles</h2>
+        <p class="price">R$8,50</p>
+      </div>
+
+      <button onclick="closeModal()" id="btn-close">Fechar</button>
+    </dialog>
+
     <main id="home" class="content-1">
-      <h1 class="slide-in-left">Bem Vindo!</h1>
+      <h1 class="enter">Bem Vindo!</h1>
 
       <div class="box-1">
         <h3>Precisa de ajuda?</h3>
         <p>Entre em contato!</p>
-        <button class="btn">Contate-nos</button>
+        <button type="submit" class="btn" id="whatsappButton">Contate-nos</button>
       </div>
     </main>
 
@@ -167,7 +202,15 @@
     <section id="address" class="address">
       <h2 class="title-2">Nosso Endereço!</h2>
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125351.8071617623!2d-37.10017697236329!3d-10.94493426671185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab37b5dadb1b7%3A0xb2dcb0021c27dcb!2sChocolate%20Lugano%20Aracaju%20%7C%20Cafeteria!5e0!3m2!1spt-BR!2sbr!4v1745861475699!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125351.8071617623!2d-37.10017697236329!3d-10.94493426671185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab37b5dadb1b7%3A0xb2dcb0021c27dcb!2sChocolate%20Lugano%20Aracaju%20%7C%20Cafeteria!5e0!3m2!1spt-BR!2sbr!4v1745861475699!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </section>
 
     <section class="footer">
@@ -186,5 +229,7 @@
         />
       </div>
     </section>
+
+    <script src="./scripts.js"></script>
   </body>
 </html>
